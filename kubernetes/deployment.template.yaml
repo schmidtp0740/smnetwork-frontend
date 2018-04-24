@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: smnetwork-deployment
+  name: smnetwork-frontend-deployment
 spec:
   selector:
     matchLabels: 
