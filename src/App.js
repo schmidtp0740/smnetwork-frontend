@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <div>
         <AppBar
-          title="Title"
+          title="Tite"
           iconElementLeft={<IconButton><NavigationClose /></IconButton>}
           iconElementRight={this.state.logged ? <Logged /> : <Login />}
         />
