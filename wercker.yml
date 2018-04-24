@@ -31,7 +31,7 @@ docker-push:
       name: copy binaries to /usr/app/src
       code: |
         mkdir -p /usr/app/src
-        cp -r ${WERCKER_ROOT}/source /usr/app/src/
+        cp -r ${WERCKER_ROOT} /usr/app/src/
     - script:
         name: echo docker tag
         code: |
