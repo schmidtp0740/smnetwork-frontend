@@ -71,7 +71,7 @@ deploy:
           rm *.template.yaml
     - create-file:
         name: Create admin.pem
-        cwd: $WERCKER_ROOT/source/kubernetes
+        cwd: $WERCKER_ROOT/kubernetes
         filename: admin.pem
         content: $KUBE_ADMIN
     - create-file:
