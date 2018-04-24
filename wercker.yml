@@ -31,7 +31,7 @@ docker-push:
       name: copy binaries to /usr/app/src
       code: |
         mkdir -p /usr/app/src
-        cp -r ${WERCKER_ROOT}/ /usr/app/src/
+        cp -r ${WERCKER_ROOT}/source /usr/app/src/
     - script:
         name: echo docker tag
         code: |
@@ -49,7 +49,7 @@ docker-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
         tag: ${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT}
-        cmd: serve -s /usr/app/src/build
+        cmd: serve -s /usr/app/src/source/build
         ports: "5000"
 
 deploy:
